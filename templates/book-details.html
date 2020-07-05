@@ -1,0 +1,25 @@
+{% extends "layout.html" %} {% load staticfiles %} {% block content %}
+<div class="container-fluid">
+  <div class="bs-docs-section">
+    <div class="row" style="display: flex;justify-content: center;">
+      <div class="col-lg-12">
+        <div class="page-header text-center">
+          <h1 id="containers">{{heading}}</h1>
+        </div>
+        <div class="bs-component">
+          <div class="jumbotron">
+            <div style="border-color: #375a7f !important;float: right;padding: 5px;    border: 1px solid #444;">
+              <img src="/media/{{ book.image }}" height="200">
+            </div>
+            <p class="blockquote-footer">Book Name</p>
+            <h1 class="display-3">{{ book.name }}</h1>
+            <p class="lead"><span class="text-muted"><i>Author</i> :</span><span class="mb-0" style="margin-left: 5px;">{{book.author}}</span>
+            </p>
+            <p class="lead"><span class="text-muted"><i>Borrowed</i> :</span><span style="margin-left: 5px;">{{book.book_count}}</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>{% endblock %}
