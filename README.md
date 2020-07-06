@@ -3,6 +3,9 @@
 
 <img src="app.png" >
 
+## About The Project
+
+A Django REST APP to manage Books inventory.   
 
 ## How To Run 
 
