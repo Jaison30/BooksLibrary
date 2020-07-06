@@ -71,9 +71,8 @@ class UserLoginAPIView(GenericAPIView):
             )
 
 
-class UserCreate(DefaultsMixin,  APIView):
+class UserCreate(APIView):
 
-    permission_classes = (IsAuthenticated, )
     serializer_class = UserSerializer
 
     def get(self, request, format=None):
