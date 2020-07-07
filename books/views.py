@@ -24,8 +24,8 @@ class Home(TemplateView):
 
         books = Book.objects.all()
 
-        ctx['title'] = 'Books Library'
-        ctx['heading'] = 'BOOKS'
+        ctx['title'] = 'Books Store'
+        ctx['heading'] = 'LATEST BOOKS'
         ctx['username'] = 'Admin'
         ctx['books'] = books
         ctx['rand'] = randint(100, 999)
